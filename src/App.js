@@ -43,9 +43,6 @@ function App() {
         {repositories.map(repository => (
           <li key={repository.id}>
           <h1>{repository.title}</h1>
-          <h2>{repository.techs}</h2>
-          <p>{repository.url}</p>
-          <h3>{repository.likes}</h3>
           <button onClick={() => handleRemoveRepository(repository.id)}>
             Remover
           </button>
